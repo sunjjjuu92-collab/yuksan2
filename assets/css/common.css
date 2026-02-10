@@ -209,7 +209,7 @@ body:where(.is-fix) {--header-height: 80px;}
 .util-ask-btn .link { display: flex; overflow: hidden; position: relative; font-size:max(1.6rem, 12px);  font-weight: 700; color: #fff; gap:0.8rem; align-items: center; padding:0 2rem;  transition:all 0.3s ease-in-out;}
 
 .util-ask-btn .link:before { display: block; content: ''; flex-shrink: 0; width: 1.6rem; height: 1.2rem;
-	background-color:#fff ; mask: url('img/ico_ask.svg') no-repeat center / contain; -webkit-mask: url('img/ico_ask.svg') no-repeat center / contain; transition:all 0.3s ease-in-out;}
+	background-color:#fff ; mask: url('../img/ico_ask.svg') no-repeat center / contain; -webkit-mask: url('../img/ico_ask.svg') no-repeat center / contain; transition:all 0.3s ease-in-out;}
 
 :is(.is-hover, .is-fix, .is-hover-header):not(.is-menu) .util-ask-btn { background-color: #e5e5e5;}
 
@@ -323,7 +323,7 @@ body:where(.is-fix) {--header-height: 80px;}
 
 .allmenu::before {content: ''; display: block; width: var(--allmenu-img-width); height:100%;  background: url('../images/common/allmenu_bg2.jpg') no-repeat 85% center / cover; opacity: 0; transition: all 0.1s ease-in-out; flex-shrink: 0; transform: translateX(-10%);}
 
-.allmenu::after {content: ''; display: block; width: var(--allmenu-img-width); height:100%;  background: url('img/logo.png') no-repeat 7% calc(100% - 4rem) ; background-size: 25% auto; z-index: 1; opacity: 0; transition: all 0.1s ease-in-out; position:absolute; top:0; left:0;  transform: translateX(-10%);}
+.allmenu::after {content: ''; display: block; width: var(--allmenu-img-width); height:100%;  background: url('../img/logo.png') no-repeat 7% calc(100% - 4rem) ; background-size: 25% auto; z-index: 1; opacity: 0; transition: all 0.1s ease-in-out; position:absolute; top:0; left:0;  transform: translateX(-10%);}
 
 
 

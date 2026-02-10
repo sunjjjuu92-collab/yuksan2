@@ -131,6 +131,25 @@ const $body = $("body");
   ///////////////////////////////////////////////////////////
 
   ///////////////////////////////////////////////////////////
+  /* 앵커 스무스 스크롤 */
+  $('a[href^="#"]').on("click", function (e) {
+    var hash = this.hash;
+    if (!hash || hash === "#") return;
+    var $target = $(hash);
+    if (!$target.length) return;
+    e.preventDefault();
+    var headerH = $(".header").outerHeight() || 80;
+    var offsetTop = $target.offset().top - headerH;
+    $("html, body").stop().animate({ scrollTop: offsetTop }, 800, "easeInOutQuint");
+    // 모바일 전체메뉴 열려있으면 닫기
+    if ($body.hasClass("is-menu")) {
+      $body.removeClass("is-open is-menu");
+      $(".allmenu").attr("aria-hidden", true);
+    }
+  });
+  ///////////////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////////////
   /* FOOTER */
 
   /* 탑버튼 */
